@@ -1,0 +1,571 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&family=Raleway:wght@400;600&display=swap");
+main .content form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+main .content form .emailInput {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+}
+main .content form .emailInput input {
+  width: 350px;
+  height: 50px;
+  text-indent: 1rem;
+  border: 1px solid hsl(243, 87%, 12%);
+  border-radius: 5px;
+  color: hsl(243, 87%, 12%);
+}
+main .content form .emailInput input .active {
+  border: 1px solid red;
+}
+main .content form .emailInput p {
+  display: none;
+  color: red;
+}
+main .content form:hover .emailInput input {
+  border: 2px solid red;
+}
+main .content form:hover .emailInput p {
+  display: block;
+}
+main .content form:hover button:hover {
+  opacity: 0.8;
+}
+main .content form button {
+  width: 350px;
+  height: 50px;
+  border-radius: 5px;
+  border: none;
+  background-color: hsl(224, 93%, 58%);
+  color: #fff;
+  font-size: 16px;
+  font-family: "Raleway", sans-serif;
+  font-weight: 400;
+}
+
+.earlyAccessSection form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+.earlyAccessSection form .emailInput {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+}
+.earlyAccessSection form .emailInput input {
+  width: 350px;
+  height: 50px;
+  text-indent: 1rem;
+  border: none;
+  border-radius: 5px;
+  color: hsl(243, 87%, 12%);
+}
+.earlyAccessSection form .emailInput input .active {
+  border: 1px solid #fff;
+}
+.earlyAccessSection form .emailInput p {
+  display: none;
+  color: #fff;
+}
+.earlyAccessSection form:hover .emailInput input {
+  border: 2px solid red;
+}
+.earlyAccessSection form:hover .emailInput p {
+  display: block;
+}
+.earlyAccessSection form:hover button:hover {
+  opacity: 0.8;
+}
+.earlyAccessSection form button {
+  width: 350px;
+  height: 50px;
+  border-radius: 5px;
+  border: none;
+  background-color: hsl(224, 93%, 58%);
+  color: #fff;
+  font-size: 16px;
+  font-family: "Raleway", sans-serif;
+  font-weight: 400;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-family: "Open Sans", sans-serif;
+  width: 100%;
+  height: 100%;
+  gap: 8rem;
+}
+
+header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding: 4rem 2rem;
+}
+header .nav {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  font-family: "Raleway", sans-serif;
+}
+header .nav img {
+  width: 100px;
+}
+header .nav ul {
+  font-size: 14px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+header .nav ul li {
+  list-style-type: none;
+}
+header .nav ul li a {
+  text-decoration: none;
+  color: hsl(238, 22%, 44%);
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+main .main-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  gap: 2rem;
+}
+main .main-container img {
+  -o-object-fit: contain;
+     object-fit: contain;
+  width: 80%;
+}
+main .main-container .content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  width: 350px;
+  gap: 2rem;
+}
+main .main-container .content h1 {
+  font-weight: 600;
+}
+main .main-container .content p {
+  font-weight: 400;
+}
+
+.mid-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+}
+.mid-section .bgImg {
+  background: url("../images/bg-curve-mobile.svg") no-repeat center bottom;
+  background-size: cover;
+  width: 100%;
+  height: 230px;
+}
+.mid-section .midContent {
+  padding-top: 1rem;
+  width: 100%;
+  background-color: #f8f8fe;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 8rem;
+  padding: 4rem 0 8rem 0;
+}
+.mid-section .midContent img {
+  width: 80%;
+}
+.mid-section .midContent .productive {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 350px;
+  gap: 1.5rem;
+}
+.mid-section .midContent .productive h3 {
+  font-weight: 600;
+}
+.mid-section .midContent .productive p {
+  font-weight: 400px;
+  font-size: 15px;
+  color: hsl(243, 87%, 12%);
+  line-height: 1.5;
+}
+.mid-section .midContent .productive .btnWithArrow {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  padding: 5px 0;
+  margin: 2rem 0;
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid hsl(170, 45%, 43%);
+}
+.mid-section .midContent .productive .btnWithArrow p {
+  font-weight: 400px;
+  font-size: 14px;
+  color: hsl(170, 45%, 43%);
+}
+.mid-section .midContent .productive .btnWithArrow img {
+  width: 20px;
+  height: 20px;
+}
+.mid-section .midContent .productive .btnWithArrow:hover {
+  border-bottom: 1px solid aqua;
+  opacity: 0.8;
+}
+.mid-section .midContent .productive .testimonial {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  text-align: start;
+  width: 320px;
+  background-color: #fff;
+  padding: 1rem 1.6rem;
+  border: none;
+  border-radius: 5px;
+  gap: 1rem;
+  box-shadow: 0px 4px 15px 5px rgba(0, 0, 0, 0.081);
+}
+.mid-section .midContent .productive .testimonial img {
+  width: 15px;
+}
+.mid-section .midContent .productive .testimonial p {
+  font-weight: 600px;
+  color: hsl(243, 87%, 12%);
+  font-size: 12px;
+  line-height: 1.8;
+  font-weight: 400;
+}
+.mid-section .midContent .productive .testimonial .user {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 0.8rem;
+}
+.mid-section .midContent .productive .testimonial .user img {
+  width: 40px;
+  border: none;
+  border-radius: 50%;
+}
+.mid-section .midContent .productive .testimonial .user h5 {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  letter-spacing: 2px;
+  font-size: 12px;
+  font-weight: 600;
+}
+.mid-section .midContent .productive .testimonial .user span {
+  color: hsl(243, 87%, 12%);
+  font-size: 10px;
+  font-weight: 400;
+  letter-spacing: 0px;
+}
+
+.earlyAccessSection {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  background-color: hsl(238, 22%, 44%);
+  margin-top: -8rem;
+  gap: 2rem;
+  padding: 2rem 0;
+}
+.earlyAccessSection .earlyAccess {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  gap: 1rem;
+  width: 320px;
+  color: #fff;
+}
+.earlyAccessSection .earlyAccess h2 {
+  font-family: "Raleway", sans-serif;
+}
+.earlyAccessSection .earlyAccess p {
+  font-size: 16px;
+  color: hsl(240, 75%, 98%);
+}
+
+.footerSection {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: hsl(243, 87%, 12%);
+  width: 100%;
+  color: #fff;
+  margin-top: -8rem;
+  padding: 4rem 0;
+  gap: 2rem;
+}
+.footerSection svg {
+  margin-left: -4rem;
+}
+.footerSection svg path {
+  fill: #fff;
+}
+
+.footerNav {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+  gap: 4rem;
+}
+.footerNav .contact {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+  gap: 1rem;
+  font-size: 16px;
+  width: 100%;
+}
+.footerNav .contact .phone,
+.footerNav .contact .email {
+  display: flex;
+  flex-direction: row;
+  align-items: start;
+  justify-content: center;
+  gap: 1rem;
+}
+.footerNav .nav {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+  gap: 4rem;
+}
+.footerNav .nav ul {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+  gap: 1rem;
+  list-style-type: none;
+}
+.footerNav .nav ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+.footerNav .nav ul li a:hover {
+  color: hsl(224, 93%, 58%);
+}
+.footerNav .socialIcons {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+.footerNav .socialIcons button {
+  width: 40px;
+  height: 40px;
+  border: 1px solid #fff;
+  border-radius: 50%;
+  background-color: transparent;
+  color: #fff;
+}
+.footerNav .socialIcons button:hover {
+  border: 1px solid hsl(224, 93%, 58%);
+  color: hsl(224, 93%, 58%);
+}
+
+@media screen and (min-width: 650px) {
+  header {
+    padding: 4rem 6rem;
+  }
+  header nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+  }
+  header nav img {
+    width: 150px;
+  }
+  header nav ul {
+    font-size: 18px;
+  }
+}
+@media screen and (min-width: 950px) {
+  main {
+    padding: 0 6rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  main .main-container {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: space-between;
+    gap: 3rem;
+  }
+  main .main-container img {
+    width: 50%;
+  }
+  main .main-container .content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    text-align: start;
+    width: 40%;
+  }
+  main .main-container form {
+    display: flex;
+    flex-direction: row;
+    align-items: start;
+    justify-content: center;
+  }
+  main .main-container form button {
+    width: 180px;
+  }
+  .mid-section .bgImg {
+    background: url("../images/bg-curve-desktop.svg") no-repeat center bottom;
+    background-size: cover;
+  }
+  .mid-section .midContent {
+    padding: 0rem 6rem 8rem;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .mid-section .midContent img {
+    width: 40%;
+  }
+  .mid-section .midContent .productive {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+  }
+  .mid-section .midContent .productive h3 {
+    font-size: 38px;
+  }
+  .mid-section .midContent .productive p {
+    width: 500px;
+  }
+  .mid-section .midContent .productive .btnWithArrow {
+    padding: 0;
+    margin: -0.8rem 0 2rem;
+  }
+  .mid-section .midContent .productive .btnWithArrow p {
+    width: 100%;
+  }
+  .mid-section .midContent .productive .testimonial {
+    gap: 0.5rem;
+  }
+  .mid-section .midContent .productive .testimonial p {
+    font-size: 13px;
+    width: 100%;
+  }
+  .earlyAccessSection {
+    padding: 6rem 6rem 4rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .earlyAccessSection .earlyAccess {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    width: 500px;
+    text-align: start;
+  }
+  .earlyAccessSection form {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+  }
+  .earlyAccessSection form .emailInput input {
+    width: 450px;
+  }
+  .earlyAccessSection form button {
+    width: 220px;
+  }
+  .footerSection {
+    padding: 6rem 6rem 4rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-around;
+  }
+  .footerSection svg {
+    margin-left: 0rem;
+  }
+  .footerSection .footerNav {
+    gap: 8rem;
+    display: flex;
+    flex-direction: row;
+    align-items: start;
+    justify-content: space-between;
+    width: 100%;
+  }
+  .footerSection .footerNav .nav {
+    gap: 8rem;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: start;
+    justify-content: space-between;
+  }
+}/*# sourceMappingURL=style.css.map */

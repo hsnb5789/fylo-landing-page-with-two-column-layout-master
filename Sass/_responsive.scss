@@ -1,0 +1,135 @@
+@include media_medium {
+  header {
+    padding: 4rem 6rem;
+    nav {
+      @include universal(row, center, space-between);
+      width: 100%;
+
+      img {
+        width: 150px;
+      }
+
+      ul {
+        font-size: 18px;
+      }
+    }
+  }
+}
+
+@include media_large {
+  main {
+    padding: 0 6rem;
+    @include universal(column, center, center);
+
+    .main-container {
+      @include universal(row-reverse, center, space-between);
+      gap: 3rem;
+
+      img {
+        width: 50%;
+      }
+
+      .content {
+        @include universal(column, flex-start, center);
+        text-align: start;
+        width: 40%;
+      }
+      form {
+        @include universal(row, start, center);
+
+        button {
+          width: 180px;
+        }
+      }
+    }
+  }
+
+  .mid-section {
+    .bgImg {
+      background: url("../images/bg-curve-desktop.svg") no-repeat center bottom;
+      background-size: cover;
+    }
+
+    .midContent {
+      padding: 0rem 6rem 8rem;
+      @include universal(row-reverse, center, space-between);
+
+      img {
+        width: 40%;
+      }
+
+      .productive {
+        // width: 100%;
+        @include universal(column, flex-start, center);
+
+        h3 {
+          font-size: 38px;
+        }
+
+        & p {
+          width: 500px;
+        }
+
+        .btnWithArrow {
+          padding: 0;
+          margin: -0.8rem 0 2rem;
+
+          p {
+            width: 100%;
+          }
+        }
+
+        .testimonial {
+          gap: 0.5rem;
+          p {
+            font-size: 13px;
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
+
+  .earlyAccessSection {
+    padding: 6rem 6rem 4rem;
+    @include universal(row, center, space-between);
+
+    .earlyAccess {
+      @include universal(column, flex-start, center);
+      width: 500px;
+      text-align: start;
+    }
+    form {
+      @include universal(column, start, center);
+      .emailInput {
+        input {
+          width: 450px;
+        }
+      }
+      button {
+        width: 220px;
+      }
+    }
+  }
+
+  .footerSection {
+    padding: 6rem 6rem 4rem;
+    @include universal(column, flex-start, space-around);
+
+    svg {
+      margin-left: 0rem;
+    }
+
+    .footerNav {
+      gap: 8rem;
+      @include universal(row, start, space-between);
+      width: 100%;
+
+      .nav {
+        gap: 8rem;
+        width: 100%;
+        @include universal(row, start, space-between);
+      }
+    }
+  }
+}

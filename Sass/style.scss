@@ -1,0 +1,302 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&family=Raleway:wght@400;600&display=swap");
+@import "utilities";
+@import "form";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  @include universal(column, center, center);
+  font-family: $body;
+  width: 100%;
+  height: 100%;
+  gap: 8rem;
+}
+
+header {
+  @include universal(row, center, space-between);
+  width: 100%;
+  padding: 4rem 2rem;
+
+  .nav {
+    width: 100%;
+    @include universal(row, center, space-between);
+    font-family: $Header-nav;
+
+    img {
+      width: 100px;
+    }
+
+    ul {
+      font-size: 14px;
+      @include universal(row, center, center);
+      gap: 1rem;
+
+      li {
+        list-style-type: none;
+
+        a {
+          text-decoration: none;
+          color: $Desaturated_Blue;
+        }
+      }
+    }
+  }
+}
+
+main {
+  @include universal(column, center, center);
+  width: 100%;
+
+  .main-container {
+    @include universal(column, center, center);
+    width: 100%;
+    gap: 2rem;
+
+    img {
+      object-fit: contain;
+      width: 80%;
+    }
+
+    .content {
+      @include universal(column, center, center);
+      text-align: center;
+      width: 350px;
+      gap: 2rem;
+
+      h1 {
+        font-weight: 600;
+      }
+
+      & p {
+        font-weight: 400;
+      }
+    }
+  }
+}
+
+.mid-section {
+  @include universal(column, center, center);
+  height: 100%;
+  width: 100%;
+
+  .bgImg {
+    background: url("../images/bg-curve-mobile.svg") no-repeat center bottom;
+    background-size: cover;
+    width: 100%;
+    height: 230px;
+  }
+
+  .midContent {
+    padding-top: 1rem;
+    width: 100%;
+    background-color: #f8f8fe;
+    @include universal(column, center, center);
+    gap: 8rem;
+    padding: 4rem 0 8rem 0;
+
+    img {
+      width: 80%;
+    }
+
+    .productive {
+      @include universal(column, center, center);
+      width: 350px;
+      gap: 1.5rem;
+
+      h3 {
+        font-weight: 600;
+      }
+
+      & p {
+        font-weight: 400px;
+        font-size: 15px;
+        color: $Very_Dark_Blue;
+        line-height: 1.5;
+      }
+
+      .btnWithArrow {
+        @include universal(row, center, center);
+        gap: 0.5rem;
+        padding: 5px 0;
+        margin: 2rem 0;
+        background-color: transparent;
+        border: none;
+        border-bottom: 1px solid $Moderate_Cyan;
+
+        & p {
+          font-weight: 400px;
+          font-size: 14px;
+          color: $Moderate_Cyan;
+        }
+
+        img {
+          width: 20px;
+          height: 20px;
+        }
+
+        &:hover {
+          border-bottom: 1px solid aqua;
+          opacity: 0.8;
+        }
+      }
+
+      .testimonial {
+        @include universal(column, flex-start, center);
+        text-align: start;
+        width: 320px;
+        background-color: #fff;
+        padding: 1rem 1.6rem;
+        border: none;
+        border-radius: 5px;
+        gap: 1rem;
+        box-shadow: 0px 4px 15px 5px rgba($color: #000000, $alpha: 0.081);
+
+        & img {
+          width: 15px;
+        }
+
+        & p {
+          font-weight: 600px;
+          color: $Very_Dark_Blue;
+          font-size: 12px;
+          line-height: 1.8;
+          font-weight: 400;
+        }
+
+        & .user {
+          @include universal(row, flex-start, center);
+          gap: 0.8rem;
+
+          & img {
+            width: 40px;
+            border: none;
+            border-radius: 50%;
+          }
+
+          h5 {
+            @include universal(column, flex-start, center);
+            letter-spacing: 2px;
+            font-size: 12px;
+            // font-family: $Header-nav;
+            font-weight: 600;
+          }
+
+          span {
+            color: $Very_Dark_Blue;
+            font-size: 10px;
+            font-weight: 400;
+            letter-spacing: 0px;
+          }
+        }
+      }
+    }
+  }
+}
+
+.earlyAccessSection {
+  @include universal(column, center, center);
+  width: 100%;
+  background-color: $Desaturated_Blue;
+  margin-top: -8rem;
+  gap: 2rem;
+  padding: 2rem 0;
+
+  .earlyAccess {
+    @include universal(column, center, center);
+    text-align: center;
+    gap: 1rem;
+    width: 320px;
+    color: #fff;
+
+    h2 {
+      font-family: $Header-nav;
+    }
+
+    p {
+      font-size: 16px;
+      color: $Light_Grayish_Blue;
+    }
+  }
+}
+
+.footerSection {
+  @include universal(column, center, center);
+  background-color: $Very_Dark_Blue;
+  width: 100%;
+  color: #fff;
+  margin-top: -8rem;
+  padding: 4rem 0;
+  gap: 2rem;
+
+  svg {
+    margin-left: -4rem;
+    path {
+      fill: #fff;
+    }
+  }
+}
+
+.footerNav {
+  @include universal(column, start, center);
+  gap: 4rem;
+
+  .contact {
+    @include universal(column, start, center);
+    gap: 1rem;
+    font-size: 16px;
+    width: 100%;
+
+    .phone,
+    .email {
+      @include universal(row, start, center);
+      gap: 1rem;
+    }
+  }
+
+  .nav {
+    @include universal(column, start, center);
+    gap: 4rem;
+
+    ul {
+      @include universal(column, start, center);
+      gap: 1rem;
+      list-style-type: none;
+
+      li {
+        a {
+          color: #fff;
+          text-decoration: none;
+          &:hover {
+            color: $Bright_Blue;
+          }
+        }
+      }
+    }
+  }
+
+  .socialIcons {
+    width: 100%;
+    @include universal(row, center, center);
+    gap: 1rem;
+
+    button {
+      width: 40px;
+      height: 40px;
+      border: 1px solid #fff;
+      border-radius: 50%;
+      background-color: transparent;
+      color: #fff;
+
+      &:hover {
+        border: 1px solid $Bright_Blue;
+        color: $Bright_Blue;
+      }
+    }
+  }
+}
+
+@import "responsive";

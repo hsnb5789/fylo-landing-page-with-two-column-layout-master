@@ -1,0 +1,127 @@
+main {
+  .content {
+    form {
+      @include universal(column, center, center);
+      gap: 1rem;
+
+      .emailInput {
+        @include universal(column, start, center);
+
+        input {
+          width: 350px;
+          height: 50px;
+          text-indent: 1rem;
+          border: 1px solid $Very_Dark_Blue;
+          border-radius: 5px;
+          color: $Very_Dark_Blue;
+        }
+
+        input .active {
+          border: 1px solid red;
+        }
+
+        p {
+          display: none;
+          color: red;
+        }
+
+        // p .active {
+        //   display: block;
+        // }
+      }
+
+      &:hover {
+        .emailInput {
+          input {
+            border: 2px solid red;
+          }
+
+          p {
+            display: block;
+          }
+        }
+
+        button {
+          &:hover {
+            opacity: 0.8;
+          }
+        }
+      }
+
+      button {
+        width: 350px;
+        height: 50px;
+        border-radius: 5px;
+        border: none;
+        background-color: $Bright_Blue;
+        color: #fff;
+        font-size: 16px;
+        font-family: $Header-nav;
+        font-weight: 400;
+      }
+    }
+  }
+}
+
+.earlyAccessSection {
+  form {
+    @include universal(column, center, center);
+    gap: 1rem;
+
+    .emailInput {
+      @include universal(column, start, center);
+
+      input {
+        width: 350px;
+        height: 50px;
+        text-indent: 1rem;
+        border: none;
+        border-radius: 5px;
+        color: $Very_Dark_Blue;
+      }
+
+      input .active {
+        border: 1px solid #fff;
+      }
+
+      p {
+        display: none;
+        color: #fff;
+      }
+
+      // p .active {
+      //   display: block;
+      // }
+    }
+
+    &:hover {
+      .emailInput {
+        input {
+          border: 2px solid red;
+        }
+
+        p {
+          display: block;
+        }
+      }
+
+      button {
+        &:hover {
+          opacity: 0.8;
+        }
+      }
+    }
+
+    button {
+      width: 350px;
+      height: 50px;
+      border-radius: 5px;
+      border: none;
+      background-color: $Bright_Blue;
+      color: #fff;
+      font-size: 16px;
+      font-family: $Header-nav;
+      font-weight: 400;
+    }
+  }
+}
