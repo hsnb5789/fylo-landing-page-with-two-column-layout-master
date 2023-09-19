@@ -29,7 +29,7 @@ $Header-nav: "Raleway", sans-serif;
   }
 }
 @mixin media_large {
-  @media screen and (min-width: 950px) {
+  @media screen and (min-width: 1025px) {
     @content;
   }
 }

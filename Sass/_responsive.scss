@@ -59,7 +59,7 @@
       }
 
       .productive {
-        // width: 100%;
+        width: 100%;
         @include universal(column, flex-start, center);
 
         h3 {
